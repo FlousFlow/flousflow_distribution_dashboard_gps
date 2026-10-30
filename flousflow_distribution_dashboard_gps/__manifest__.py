@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Distribution Dashboard — GPS Analytics',
-    'version': '19.0.1.0.0',
+    'name': 'Distribution Dashboard - GPS Analytics',
+    'version': '20.0.1.0.0',
     'category': 'Sales/Distribution',
     'summary': 'GPS compliance section and GPS analysis reporting for the '
                'distribution dashboard',
@@ -16,7 +16,7 @@ flousflow_distribution_route_gps):
   have a wrong location on file)
 * GPS Analysis reporting menu (pivot + graph + dedicated search filters)
 
-Read-only — adds no workflow and writes no GPS data.
+Read-only - adds no workflow and writes no GPS data.
 """,
     'author': 'Flous Flow',
     'website': 'https://flousflow.com',
@@ -29,9 +29,16 @@ Read-only — adds no workflow and writes no GPS data.
         'security/security.xml',
         'views/gps_analysis_views.xml',
     ],
-    'installable': True,
+        'images': [
+        'static/description/index.html',
+        'static/description/thumbnail.png',
+        'static/description/cover.png',
+        'static/description/banner.png',
+        'static/description/icon.png',
+    ],
+'installable': True,
     'application': False,
     # Auto-merge: as soon as the dashboard + GPS modules co-exist, the GPS
-    # analytics section installs itself — no manual step for the user.
+    # analytics section installs itself - no manual step for the user.
     'auto_install': True,
 }
